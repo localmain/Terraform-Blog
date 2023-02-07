@@ -17,7 +17,7 @@ pipeline {
         stage ("terraform action") {
             steps {
                 echo "terraform action is ${action}"
-                bat ('terraform ${action} --auto-approve') 
+                bat ('terraform ${action}') 
            }
         }
     }
